@@ -149,7 +149,9 @@
     <ClInclude Include="DirtyEffect.hpp" />
     <ClInclude Include="Enemy.hpp" />
     <ClInclude Include="ExplosionEffect.hpp" />
+    <ClInclude Include="FireBullet.hpp" />
     <ClInclude Include="GameEngine.hpp" />
+    <ClInclude Include="GreenGunTurret.hpp" />
     <ClInclude Include="Group.hpp" />
     <ClInclude Include="IControl.hpp" />
     <ClInclude Include="Image.hpp" />
@@ -184,7 +186,9 @@
     <ClCompile Include="DirtyEffect.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="ExplosionEffect.cpp" />
+    <ClCompile Include="FireBullet.cpp" />
     <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="GreenGunTurret.cpp" />
     <ClCompile Include="Group.cpp" />
     <ClCompile Include="IControl.cpp" />
     <ClCompile Include="Image.cpp" />

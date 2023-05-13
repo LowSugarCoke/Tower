@@ -18,6 +18,7 @@
 #include "Label.hpp"
 // Turret
 #include "PlugGunTurret.hpp"
+#include "GreenGunTurret.hpp"
 #include "Plane.hpp"
 // Enemy
 #include "RedNormalEnemy.hpp"
@@ -277,6 +278,10 @@ void PlayScene::OnKeyDown(int keyCode) {
 	}
 	// TODO 3 (5/5): Make the W key to create the new turret.
 	else if (keyCode == ALLEGRO_KEY_W) {
+		UIBtnClicked(1);
+	}
+
+	else if (keyCode == ALLEGRO_KEY_W) {
 		// Hotkey for new turret.
 	}
 	else if (keyCode >= ALLEGRO_KEY_0 && keyCode <= ALLEGRO_KEY_9) {
@@ -362,7 +367,8 @@ void PlayScene::ConstructUI() {
 	// Buttons
 	ConstructButton(0, "play/turret-6.png", PlugGunTurret::Price);
 	// TODO 3 (3/5): Create a button to support constructing the new turret.
-    
+	ConstructButton(1, "play/turret-1.png", GreenGunTurret::Price);
+
 	int w = Engine::GameEngine::GetInstance().GetScreenSize().x;
 	int h = Engine::GameEngine::GetInstance().GetScreenSize().y;
 	int shift = 135 + 25;
@@ -390,6 +396,9 @@ void PlayScene::UIBtnClicked(int id) {
 	if (id == 0 && money >= PlugGunTurret::Price) 
 		preview = new PlugGunTurret(0, 0);
 	// TODO 3 (4/5): On the new turret button callback, create the new turret.
+	if (id == 1 && money >= GreenGunTurret::Price)
+		preview = new GreenGunTurret(0, 0);
+
 	if (!preview)
 		return;
 	preview->Position = Engine::GameEngine::GetInstance().GetMousePosition();
