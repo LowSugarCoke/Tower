@@ -14,15 +14,20 @@
 [INFO] Loaded Resource<image>: resources/images/stage-select/dirt.png scaled to 400x100
 [INFO] Loaded Resource<image>: resources/images/stage-select/dirt.png
 [INFO] Loaded Resource<image>: resources/images/stage-select/floor.png
+[INFO] Loaded Resource<audio>: resources/audios/select.ogg
+[INFO] Created<sample_instance>: resources/audios/select.ogg
 [INFO] Changed to stage-select scene
+[INFO] stopped audio (sample)
 [INFO] Loaded Resource<image>: resources/images/stage-select/slider.png
 [INFO] Loaded Resource<image>: resources/images/stage-select/slider-blue.png
 [INFO] Loaded Resource<image>: resources/images/stage-select/bar.png scaled to 190x4
 [INFO] Loaded Resource<image>: resources/images/stage-select/end.png
 [INFO] Loaded Resource<font>: resources/fonts/pirulen.ttf with size 28
-[INFO] Loaded Resource<audio>: resources/audios/select.ogg
 [INFO] Created<sample_instance>: resources/audios/select.ogg
 [INFO] Changed to setting-scene scene
+[INFO] stopped audio (sample)
+[INFO] Created<sample_instance>: resources/audios/select.ogg
+[INFO] Changed to stage-select scene
 [INFO] Game Terminating...
 [INFO] stopped audio (sample)
 [INFO] Game terminated
