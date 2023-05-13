@@ -147,16 +147,17 @@ void PlayScene::Update(float deltaTime) {
 		if (enemyWaveData.empty()) {
 			if (EnemyGroup->GetObjects().empty()) {
 				// Free resources.
-				delete TileMapGroup;
-				delete GroundEffectGroup;
-				delete DebugIndicatorGroup;
-				delete TowerGroup;
-				delete EnemyGroup;
-				delete BulletGroup;
-				delete EffectGroup;
-				delete UIGroup;
-				delete imgTarget;
+				//delete TileMapGroup;
+				//delete GroundEffectGroup;
+				//delete DebugIndicatorGroup;
+				//delete TowerGroup;
+				//delete EnemyGroup;
+				//delete BulletGroup;
+				//delete EffectGroup;
+				//delete UIGroup;
+				//delete imgTarget;
                 Engine::GameEngine::GetInstance().ChangeScene("win-scene");
+				
 			}
 			continue;
 		}
@@ -318,7 +319,7 @@ void PlayScene::OnKeyDown(int keyCode) {
 	}
 }
 void PlayScene::Hit() {
-	UILives->Text = std::string("Life ") + std::to_string(lives--);
+	UILives->Text = std::string("Life ") + std::to_string(--lives);
 	if (lives <= 0) {
 		Engine::GameEngine::GetInstance().ChangeScene("lose");
 	}
