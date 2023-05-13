@@ -16,8 +16,15 @@ FireBullet::FireBullet(Engine::Point position, Engine::Point forwardDirection, f
 
 }
 void FireBullet::OnExplode(Enemy* enemy) {
+
+    float slowFactor = 0.1;  // example value, slows the enemy to half speed
+    float slowTime = 0.5;    // example value, slows the enemy for 2 seconds
+    enemy->Slow(slowFactor, slowTime);
+
     std::random_device dev;
     std::mt19937 rng(dev());
     std::uniform_int_distribution<std::mt19937::result_type> dist(2, 5);
     getPlayScene()->GroundEffectGroup->AddNewObject(new DirtyEffect("play/dirty-2.png", dist(rng), enemy->Position.x, enemy->Position.y));
+    
+
 }
