@@ -46,3 +46,5 @@
 [INFO] Loaded Resource<image>: resources/images/play/explosion-5.png
 [INFO] Loaded Resource<image>: resources/images/play/dirty-3.png
 [INFO] Loaded Resource<audio>: resources/audios/explosion.wav
+[INFO] Loaded Resource<image>: resources/images/play/dirty-2.png
+[INFO] Loaded Resource<image>: resources/images/play/enemy-10.png
