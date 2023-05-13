@@ -116,6 +116,9 @@
     <ClInclude Include="SettingScene.hpp">
       <Filter>標頭檔</Filter>
     </ClInclude>
+    <ClInclude Include="BlueNormalEnemy.hpp">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Allegro5Exception.cpp">
@@ -218,6 +221,9 @@
       <Filter>來源檔案</Filter>
     </ClCompile>
     <ClCompile Include="SettingScene.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="BlueNormalEnemy.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>

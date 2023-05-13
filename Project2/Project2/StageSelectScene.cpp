@@ -37,6 +37,11 @@ void StageSelectScene::Initialize() {
 
     // Not safe if release resource while playing, however we only free while change scene, so it's fine.
     bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
+
+    // Turn off the voice
+    AudioHelper::ChangeSampleVolume(bgmInstance, 0);
+    AudioHelper::BGMVolume = 0;
+    AudioHelper::SFXVolume = 0;
 }
 void StageSelectScene::Terminate() {
 	AudioHelper::StopSample(bgmInstance);
