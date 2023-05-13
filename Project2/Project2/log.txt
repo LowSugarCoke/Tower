@@ -38,6 +38,10 @@
 [INFO] Changed to play scene
 [INFO] Loaded Resource<image>: resources/images/play/enemy-9.png
 [INFO] Loaded Resource<image>: resources/images/play/bullet-1.png
+[INFO] Loaded Resource<image>: resources/images/play/shoot-1.png
+[INFO] Loaded Resource<image>: resources/images/play/shoot-2.png
+[INFO] Loaded Resource<image>: resources/images/play/shoot-3.png
+[INFO] Loaded Resource<image>: resources/images/play/shoot-4.png
 [INFO] Loaded Resource<audio>: resources/audios/gun.wav
 [INFO] Loaded Resource<image>: resources/images/play/dirty-2.png
 [INFO] Loaded Resource<image>: resources/images/play/explosion-1.png

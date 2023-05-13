@@ -8,6 +8,7 @@
 #include "GreenGunTurret.hpp"
 #include "PlayScene.hpp"
 #include "Point.hpp"
+#include "ShootEffect.hpp"
 
 const int GreenGunTurret::Price = 60;
 GreenGunTurret::GreenGunTurret(float x, float y) :
@@ -21,6 +22,6 @@ void GreenGunTurret::CreateBullet() {
     Engine::Point normalized = diff.Normalize();
     // Change bullet position to the front of the gun barrel.
     getPlayScene()->BulletGroup->AddNewObject(new FireBullet(Position + normalized * 36, diff, rotation, this));
-    // TODO 4 (2/2): Add a ShootEffect here. Remember you need to include the class.
+    getPlayScene()->EffectGroup->AddNewObject(new ShootEffect(Position.x, Position.y));
     AudioHelper::PlayAudio("gun.wav");
 }
