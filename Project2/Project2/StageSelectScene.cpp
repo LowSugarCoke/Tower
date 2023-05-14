@@ -39,9 +39,9 @@ void StageSelectScene::Initialize() {
     bgmInstance = AudioHelper::PlaySample("select.ogg", true, AudioHelper::BGMVolume);
 
     // Turn off the voice
-    //AudioHelper::ChangeSampleVolume(bgmInstance, 0);
-    //AudioHelper::BGMVolume = 0;
-    //AudioHelper::SFXVolume = 0;
+    AudioHelper::ChangeSampleVolume(bgmInstance, 0);
+    AudioHelper::BGMVolume = 0;
+    AudioHelper::SFXVolume = 0;
 }
 void StageSelectScene::Terminate() {
 	AudioHelper::StopSample(bgmInstance);

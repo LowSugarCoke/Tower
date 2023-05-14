@@ -17,10 +17,11 @@ Slider::Slider(float x, float y, float w, float h) :
 	Anchor = Engine::Point(0.5, 0.5);
 }
 void Slider::Draw() const {
-    Bar.Draw();
+	
+	Bar.Draw();
     End1.Draw();
     End2.Draw();
-    ImageButton::Draw();
+	ImageButton::Draw();
 }
 void Slider::SetOnValueChangedCallback(std::function<void(float value)> onValueChangedCallback) {
     OnValueChangedCallback = onValueChangedCallback;
@@ -41,6 +42,7 @@ void Slider::SetValue(float value) {
 void Slider::OnMouseDown(int button, int mx, int my) {
 	// TODO 1 (5/7): Set 'Down' to true if mouse is in the slider.
 	if (button == 1) {
+		
 		if (mx >= Position.x - Size.x / 2 && mx <= Position.x + Size.x / 2 &&
 			my >= Position.y - Size.y / 2 && my <= Position.y + Size.y / 2) {
 			Down = true;
@@ -55,7 +57,7 @@ void Slider::OnMouseUp(int button, int mx, int my) {
 	}
 }
 void Slider::OnMouseMove(int mx, int my) {
-
+	ImageButton::OnMouseMove(mx,  my);
 	// TODO 1 (7/7): Clamp the coordinates and calculate the value. Call 'SetValue' when you're done.
 	if (Down) {
 		float newValue = (mx - Bar.Position.x) / Bar.Size.x;
